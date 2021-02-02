@@ -8,12 +8,19 @@ body {
 }
 
 body {
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Gentium Basic', serif;
+    /* font-family: 'Rambla', sans-serif; */
     font-size: 15px;
     line-height: 1.5em;
     font-weight: 400;
-    color: #81D4FA;
-    background: #81D4FA;
+    color: #252933;
+    /* background: #81D4FA; */
+    /* background: #beeaff; */
+    /* background: #e6f3f8; deb  */
+    /* e6f3f8 */
+    background: #dcf3fc;
+
+
 }
 
 /*** typography ***/
@@ -27,7 +34,9 @@ h4,
 h5,
 h6 {
     color: #01579B;
-    font-family: 'Rambla', sans-serif;
+    /* font-family: 'Rambla', sans-serif; */
+    /* font-family: 'Gentium Basic', serif; */
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     margin: 0 0 20px 0;
 }
@@ -35,7 +44,9 @@ h6 {
 /* paragraph */
 
 p {
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Gentium Basic', serif;
+
+    /* font-family: 'Rambla', sans-serif; */
     font-size: 15px;
     line-height: 1.5em;
     margin: 0 0 20px;
@@ -133,9 +144,16 @@ strong {
     bottom: 30px;
     top: 30px;
     /*    left: 0;*/
-    overflow-y: scroll;
+    overflow: hidden;
+    /* overflow-y: scroll; */
     z-index: 1001;
-    background: #101010;
+    /* background: #101010; */
+    /* background:#dee2e6; */
+    /* background:#96b2d0; */
+    /* background:#a5c0dd; */
+    background:#fafafa;
+
+
     /* background-image: linear-gradient(to right top, #032481, #053090, #073da0, #0749af, #101010); */
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -159,6 +177,7 @@ strong {
         -o-transform: translateX(-270px);
         transform: translateX(-270px);
         padding-top: 4em;
+        overflow-y: scroll;
     }
 }
 
@@ -201,7 +220,8 @@ strong {
 #lonon-aside #lonon-logo a {
     display: inline-block;
     text-align: center;
-    color: #fff;
+    /* color: #fff;  */
+    color: #000;
 }
 
 #lonon-logo-footer a {
@@ -214,7 +234,8 @@ strong {
     display: block;
     margin-top: 0px;
     text-align: center;
-    color: #d6e5f8;
+    /* color: #d6e5f8; */
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
@@ -243,11 +264,14 @@ strong {
     line-height: 1.5em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid white; */
 }
 
 #lonon-aside #lonon-main-menu ul li a {
-    color: white;
+    color: #000;
+
+    /* color: white; */
     position: relative;
 }
 
@@ -315,7 +339,7 @@ strong {
 }
 
 #lonon-aside .lonon-footer ul li a {
-    color: #888;
+    color: #000;
     padding: 7px;
 }
 
@@ -412,6 +436,7 @@ body.offcanvas .lonon-nav-toggle {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.8em;
+    display:inline; 
 }
 
 .lonon-about-contact-wrap {
@@ -454,6 +479,7 @@ body.offcanvas .lonon-nav-toggle {
 }
 
 .heading-meta.style-1:after {
+    
     content: "";
     height: 2px;
     left: 15px;
@@ -569,6 +595,10 @@ body.offcanvas .lonon-nav-toggle {
 
 
 /*** 05. Section styles ***/
+.projects{
+    color: black;
+    text-transform: none; 
+}
 
 .lonon-lonon-timeline,
 .lonon-about,
@@ -957,6 +987,7 @@ ul.social-network li {
 .lonon-timeline>li:hover .lonon-timeline-content:before {
     background-color: #101010;
     box-shadow: 0 0 0 1px #101010;
+
 }
 
 .lonon-timeline>li:hover .lonon-timeline-content .lonon-timeline-date {
@@ -994,8 +1025,9 @@ ul.social-network li {
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 16px;
-    text-transform: uppercase;
-    color: rgb(106, 106, 106);
+    text-transform: none;
+    /* text-transform: uppercase; */
+    color: rgb(0, 0, 0);
     letter-spacing: 0.05em;
     font-weight: 800;
 }
@@ -1023,6 +1055,19 @@ ul.social-network li {
     transition: all .3s ease;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .lonon-timeline {
+        margin-left: -8%;
+
+    }
+    .lonon-timeline>li .lonon-timeline-content h5 {
+        font-size: 12px;        
+    }
+    .lonon-timeline>li .lonon-timeline-content h4 {
+        font-size: 12px;        
+    }
+}
 
 /* Other styles */
 
@@ -1092,3 +1137,9 @@ hr {
         letter-spacing: .01em;
 
     }
+
+.name_link{
+    color:orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
