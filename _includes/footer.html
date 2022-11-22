@@ -1,0 +1,49 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading small-site-title">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list footer-content">
+          <li>Powered By <a href="http://github.com/hemangsk/Gravity">Gravity</a></li>
+          <li>Made with <i class="fa fa-heart"></i> on <a href="http://jekyllrb.com"><span>Jekyll</a></span></li>
+
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2 footer-content">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+        {% if site.scholar_username %}
+        <li>
+          {% include icon-scholar.html username=site.scholar_username name=site.short_title%}
+        </li>
+        {% endif %}
+      </ul>
+
+
+      </div>
+
+      <div class="footer-col footer-col-3 site-description">
+        <p>{{ site.description }}</p>
+        <p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcryptonymous9.github.io&count_bg=%23D5D5D5&title_bg=%23555555&icon=clockify.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

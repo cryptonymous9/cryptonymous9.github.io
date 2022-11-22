@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "My tensor",
+      "tensorShape": [
+        1000,
+        50
+      ],
+      "tensorPath": "https://raw.githubusercontent.com/cryptonymous9/cryptonymous9.github.io/master/files/project_files/temp/values.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/cryptonymous9/cryptonymous9.github.io/master/files/project_files/temp/names.tsv"
+    }
+  ]
+}
