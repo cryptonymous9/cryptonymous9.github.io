@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "Image recognition"
+title:  "A study on GoogLeNet, ResNet and Preact-ResNet on Cifar-10 classification"
+tag: "Image recognition"
 date:   2022-07-05 19:45:31 +0530
 categories: science
 author: "Nidhin"
 usemathjax: true
 ---
-
-# A study on GoogLeNet, ResNet and Preact-ResNet on Cifar-10 classification
 
 In this notebook, I'll be implementing some of architectures that we studied in the last few lectures for cifar-10 classification. Specifically,  I'll be comparing 3 methods: 
 

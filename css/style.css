@@ -4,7 +4,7 @@
 /** Light theme color definitions */
 body.light { color: #111; background-color: #fdfdfd; /** Links */ /** Code formatting */ /** Icons */ /** Site header */ /** Site footer */ }
 
-body.light a { color: #aaa !important; }
+body.light a { color: #ab3e3c !important; }
 
 body.light a:visited { color: #02060b; }
 
@@ -12,13 +12,13 @@ body.light a:hover { color: #2b2b2b !important; border-color: #848484; }
 
 body.light a.page-link:hover { color: #111; border-color: #2b2b2b; }
 
-body.light a.postLink { color: #2b2b2b !important; }
+body.light a.postLink { color: #ab3e3c !important; }
 
-body.light a.postLink:visited { color: #DC143C !important; border-color: #DC143C; }
+body.light a.postLink:visited { color: #b99487 !important; border-color: #DC143C; }
 
 body.light a.post-title-link { color: #2b2b2b !important; }
 
-body.light a.post-title-link:visited { color: #DC143C !important; border-color: #DC143C; }
+body.light a.post-title-link:visited { color: #3f3f3f !important; border-color: #DC143C; }
 
 body.light blockquote { color: #828282; border-left-color: #e8e8e8; }
 
@@ -121,7 +121,7 @@ a:hover { border-bottom: 1px dotted; }
 
 a.page-link:hover { border-bottom: 1px dotted; }
 
-a.postLink:hover { border-bottom: 1px dotted; }
+a.postLink:hover {background-color: #d6d6dd; border-bottom: 1px dotted; border-top: 1px dotted;}
 
 a.post-title-link:hover { border-bottom: 1px dotted !important; }
 
@@ -176,7 +176,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .postTag { float: right; }
 
-.postTitle { font-weight: 400; text-align: center; text-transform: uppercase; letter-spacing: 3px; text-indent: 3px; }
+.postTitle { font-weight: 400; text-align: left; letter-spacing: 2px; text-indent: 3px; }
+
+/* .postTitle { font-weight: 400; text-align: center; text-transform: uppercase; letter-spacing: 3px; text-indent: 3px; } */
 
 /** Site header */
 .site-header { border-top: 5px solid; border-bottom: 1px solid; min-height: 56px; position: relative; }
@@ -189,9 +191,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .site-navigation { text-transform: uppercase; font-size: 14px; letter-spacing: 2px; text-indent: 6px; font-family: 'Josefin Sans'; font-weight: 300; padding-top: 5em; }
 
-.page-title { text-transform: uppercase; letter-spacing: 2px; text-indent: 2px; font-family: "PT Sans"; font-size: 12px; text-align: center; }
+.page-title { text-transform: uppercase; letter-spacing: 2px; text-indent: 2px; font-family: "PT Sans"; font-size: 14px; text-align: center; }
 
-.page-tagline { font-size: 18px; font-family: "PT Sans"; text-align: center; text-transform: lowercase; }
+.page-tagline { font-size: 16px; font-family: "PT Sans"; text-align: center; }
 
 .site-nav .page-link { line-height: 1.5; }
 
@@ -240,13 +242,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 62px; text-align: center; font-family: "PT Sans"; font-weight: 900; }
+.post-title { font-size: 42px; text-align: center; font-family: "PT Sans"; font-weight: 900; }
 
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 
 .post-content { margin-bottom: 30px; padding-bottom: 3em !important; }
 
-.post-content p { font-size: 1.5rem; }
+.post-content p { font-size: 1.15rem; }
 
 .post-content h2 { font-size: 32px; }
 

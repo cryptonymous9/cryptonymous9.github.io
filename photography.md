@@ -2,12 +2,9 @@
 layout: page
 title: Photography
 permalink: /photography/
-tagline: "City &#x2022; Streets &#x2022; People"
+tagline: "City &#x2022; Streets &#x2022; People <br>Capturing the mundane one frame at a time."
 ---
-<br>
 
-
-<center><p>Capturing the mundane one frame at a time.</p></center>
 <br>
 <div class="manual-post">
   <div class="manual manual-title">

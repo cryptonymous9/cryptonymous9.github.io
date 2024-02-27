@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Blog
-permalink: /blog/
-tagline: "I like playing with Neural Networks."
+title: ML Notebooks
+permalink: /notebooks/
+tagline: "A compilation of Machine Learning notebooks."
 category: "science"
 ---
