@@ -401,3 +401,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .il { color: #099; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.image-txt-container {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+  }
