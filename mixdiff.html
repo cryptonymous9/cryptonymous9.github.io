@@ -1,0 +1,334 @@
+---
+layout: none
+title: MixDiff
+permalink: /mixdiff/
+description: A growing collection of your cool projects.
+nav: true
+horizontal: false
+---
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>MixDiff</title>
+
+    <meta name="description"
+        content="MixDiff: Mixing Natural and Synthetic Images for \\Robust Self-Supervised Representations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .rowk {
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+        }
+        
+        .columnk {
+            flex: 1; /* Distributes space equally among columns */
+            text-align: center; /* Centers the image within the column */
+        }
+        .columnkk {
+            flex: 1; /* Distributes space equally among columns */
+            text-align: center; /* Centers the image within the column */
+        }
+        
+        .columnk img {
+            width: 100%; /* Adjusts the image width */
+            max-width: 85%; /* Limits image size to 50% of its container */
+        }
+        .columnkk img {
+            width: 100%; /* Adjusts the image width */
+            max-width: 100%; /* Limits image size to 50% of its container */
+        }
+    </style>
+    <!-- <base href="/"> -->
+
+    <!--FACEBOOK-->
+    <!-- <meta property="og:image" content="/assets/img/merf/social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creiser.github.io/merf" />
+    <meta property="og:title" content="MERF" />
+    <meta property="og:description"
+        content="Project page for MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes." /> -->
+
+    <!--TWITTER-->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MERF" />
+    <meta name="twitter:description"
+        content="Project page for MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes." />
+    <meta name="twitter:image" content="/assets/img/merf/social.png" /> -->
+
+
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="/assets/css/mixdiff/app.css">
+
+    <link rel="stylesheet" href="/assets/css/mixdiff/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/mixdiff/dics.min.css">
+    <script src="/assets/js/mixdiff/dics.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', domReady);
+        function domReady() {
+            for (const e of document.querySelectorAll(".b-dics")) {
+                new Dics({
+                    container: e,
+                    textPosition: "top"
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>MixDiff</b>: Mixing Natural and Synthetic Images for <br>Robust Self-Supervised Representations
+                <small>
+                <br>
+                    <strong>WACV 2025</strong>
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="">
+                          Reza Akbarian Bafghi*<sup>1</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          Nidhin Harilal*<sup>1</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          Claire Monteleoni<sup>1,2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          Maziar Raissi<sup>3</sup>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        Univeristy of Colorado Boulder<sup>1</sup>
+                    </li>
+                    <li>
+                        INRIA, Paris<sup>2</sup>
+                    </li>
+                    <li>
+                        University of California Irvine<sup>3</sup>
+                    </li>
+                </ul>
+                <p>*Joint first authors</p>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="">
+                            <!-- <image src="/assets/img/merf/paper.png" height="120px"> -->
+                                <h4><strong>[Paper]</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <!-- <image src="/assets/img/merf/github_pad.png" height="120px"> -->
+                                <h4><strong>[Code]</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <!-- <image src="/assets/img/merf/github_pad.png" height="120px"> -->
+                                <h4><strong>[Synthetic IN-1K]</strong></h4>
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <image src="/assets/img/mixdiff/benchmark.png" style="width:80%;" class="img-responsive center-block" alt="overview">
+
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="/assets/img/merf/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                    This paper introduces <em>MixDiff</em>, a new self-supervised learning (SSL) pre-training framework that combines real and synthetic images. Unlike traditional SSL methods that predominantly use real images, MixDiff uses a variant of Stable Diffusion to replace an augmented instance of a real image, facilitating the learning of cross real-synthetic image representations.  Our key insight is that while models trained solely on synthetic images underperform, combining real and synthetic data leads to more robust and adaptable representations. Experiments show MixDiff enhances SimCLR, BarlowTwins, and DINO across various robustness datasets and domain transfer tasks, boosting SimCLR's ImageNet-1K accuracy by 4.56%. Our framework also demonstrates comparable performance without needing any augmentations, a surprising finding in SSL where augmentations are typically crucial. Furthermore, MixDiff achieves similar results to SimCLR while requiring less real data, highlighting its efficiency in representation learning.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/3EACM2JAcxc" allowfullscreen
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Mixing in joint-embedding SSL
+                </h3>
+                <br>
+                    <img src="/assets/img/mixdiff/arch.png" style="width:100%;" class="img-responsive center-block" alt="contraction">
+                
+                    <br>
+                    <p class="text-justify">
+                        Consider \(x_1\) and \(x'_1\), two augmented patches from an image, randomly selected from a dataset. These augmentations can include a variety of changes, such as altering spatial positions within an image, adding varying noise and applying random color adjustments, etc. Existing instance-based discriminative SSL methods primarily rely on real images (example - MoCo, SimCLR, BarlowTwins, and DINO). In these methods, the representation derived from the first augmentation, \(x_1\), of a real image is anticipated to closely align with the representation of the second augmentation, \(x_1\)$, of the same image. Our MixDiff framework modifies this approach by incorporating synthetically generated images alongside real ones. The primary objective of MixDiff is to synchronize the representations of real and synthetic images, thus enhancing existing SSL methodologies such as SimCLR, DINO, and BarlowTwins.
+                    </p>
+            </div>
+        </div>
+
+
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    MixDiff boosts robustness to distribution shifts
+                </h3>
+                <br>
+                <div class="rowk">
+                    <div class="columnk">
+                        <img src="/assets/img/mixdiff/difmodels.png" class="img-responsive center-block" alt="contraction">
+                    </div>
+                    <div class="columnkk">
+                        <img src="/assets/img/mixdiff/diffconfig.png" class="img-responsive center-block" alt="contraction">
+                    </div>
+                  </div> 
+                
+                    <br>
+                    <p class="text-justify">
+                        Consider \(x_1\) and \(x'_1\), two augmented patches from an image, randomly selected from a dataset. These augmentations can include a variety of changes, such as altering spatial positions within an image, adding varying noise and applying random color adjustments, etc. Existing instance-based discriminative SSL methods primarily rely on real images (example - MoCo, SimCLR, BarlowTwins, and DINO). In these methods, the representation derived from the first augmentation, \(x_1\), of a real image is anticipated to closely align with the representation of the second augmentation, \(x_1\)$, of the same image. Our MixDiff framework modifies this approach by incorporating synthetically generated images alongside real ones. The primary objective of MixDiff is to synchronize the representations of real and synthetic images, thus enhancing existing SSL methodologies such as SimCLR, DINO, and BarlowTwins.
+                    </p>
+            </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    DINO: Impact of mixing in self-attention and performance
+                </h3>
+                <br>
+                    <img src="/assets/img/mixdiff/attn_cpr.png" style="width:80%;" class="img-responsive center-block" alt="contraction">
+                
+                    <br>
+                    <p class="text-justify">
+                        In our analysis of DINO models trained on IN-100, we interpret masks derived from self-attention maps by applying thresholds for enhanced visualization. These maps, sourced from the top-performing head of each ViT-S/16 DINO model trained on both real and synthetic ImageNet datasets using our MixDiff approach, are not designed for mask creation but rather to highlight the model's focus areas during image processing. Our findings show that models trained on real images effectively segment objects with some background attention. In contrast, the model trained on synthetic images shows a tendency to focus less on the background, but the overall object segmentation appears somewhat less defined. The MixDiff-trained model strikes a balance, demonstrating clearer object focus with minimal background distraction, indicating improved object segmentation. This improvement is clearly visible in the last row. This suggests that integrating synthetic data with the MixDiff method potentially enhances scene understanding and image segmentation capabilities.
+                    </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                    <p class="text-justify">We believe MixDiff’s effectiveness is due to synthetic images acting as hard positive samples. It is more challenging to bring generated images closer than to bring augmented samples closer. These hard positive samples prevent the model from learning trivial features, which enhances its ability to learn effective representations</p>
+                    <p class="text-justify">
+                        Overall, we find that SSL models pre-trained exclusively on synthetic images underperform compared to those pre-trained with real images across most scenarios. Interestingly, our proposed MixDiff, which uses both real and synthetic images, improves model performance in SSL not only on in-distribution datasets but also on various out-of-distribution tasks, suggesting enhanced representation learning. Specifically, we observe an average increase in top-1 accuracy of about 26.92% across six distributional datasets and a 7.36% improvement in transfer learning across eight datasets. This observation suggests that while synthetic images alone may be insufficient for optimal pre-training, MixDiff capitalizes on the synergistic approach of leveraging the strengths of both image types to learn more robust SSL representations. Check out our paper for more details.
+                    </p>
+            </div>
+        </div>
+
+
+
+
+<!-- 
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    SNeRG++ vs MERF
+                </h3>
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/stump_snerg.png" alt="SNeRG++ (210 MB)" />
+                    <img src="/assets/img/merf/comp/stump_merf.png" alt="MERF (220 MB)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/kitchenlego_snerg.png" alt="SNeRG++  (213 MB)" />
+                    <img src="/assets/img/merf/comp/kitchenlego_merf.png" alt="MERF (233 MB)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/gardenvase_snerg.png" alt="SNeRG++  (117 MB)" />
+                    <img src="/assets/img/merf/comp/gardenvase_merf.png" alt="MERF (198 MB)" />
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <p>
+                    If you want to cite our work, please use:
+                </p>
+<pre>
+@article{bafghi2024mixing,
+    title={Mixing Natural and Synthetic Images for Robust 
+        Self-Supervised Representations},
+    author={Bafghi, Reza Akbarian and Harilal, Nidhin and 
+        Monteleoni, Claire and Raissi, Maziar},
+    journal={arXiv preprint arXiv:2406.12368},
+    year={2024}
+}</pre>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
