@@ -2,7 +2,7 @@
 /** Light color palette */
 /** Dark color palette */
 /** Light theme color definitions */
-body.light { color: #111; background-color: #fdfdfd; /** Links */ /** Code formatting */ /** Icons */ /** Site header */ /** Site footer */ }
+body.light { color: #111; background-color: #ffffff; /** Links */ /** Code formatting */ /** Icons */ /** Site header */ /** Site footer */ }
 
 body.light a { color: #ab3e3c !important; }
 
@@ -107,7 +107,9 @@ figure > img { display: block; }
 figcaption { font-size: 14px; }
 
 /** Lists */
-ul, ol { margin-left: 30px; }
+ul, ol { margin-left: 0px; }
+
+li {margin-bottom: 5px;}
 
 li > ul, li > ol { margin-bottom: 0; }
 
@@ -139,18 +141,18 @@ pre { padding: 8px 12px; overflow-x: auto; }
 
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
-/** Wrapper */
+/** Wrapper */  
 .wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
-/** Clearfix */
+/** Clearfix */ 
 .footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
 
 /** Icons */
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
 
-.post { font-family: "Source Sans Pro"; font-size: 18px; font-weight: 300; padding-top: 0; }
+.post { font-family: "Source Sans Pro"; font-size: 16px; font-weight: 300; padding-top: 0; }
 
 .home { padding-bottom: 5em; }
 
@@ -162,13 +164,13 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .archive-intro { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; text-indent: 2px; }
 
-.archiveIntro { text-align: center; }
+.archiveIntro { text-align: center; font-weight: 350;}
 
 .hint { text-transform: uppercase; font-size: 11px; letter-spacing: 2px; text-indent: 2px; }
 
 .example { font-family: 'Menlo'; padding: 10px; }
 
-.manual { text-transform: uppercase; font-size: 16px; letter-spacing: 2px; text-indent: 2px; }
+.manual { text-transform: uppercase; font-size: 16px; letter-spacing: 2px; text-indent: 2px; margin-bottom: 10px;}
 
 .postContent { padding-top: 3.5em; text-align: center; }
 
